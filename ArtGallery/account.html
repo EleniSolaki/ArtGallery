@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link href="./css/head-footer.css" rel="stylesheet">
+    <link href="./css/account.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41b178347b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <span class="fonts">
+                <a href="#" class="menu-hamb">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </span>
+            <div class="logo">
+                <img src="../art.png" alt="logo">
+            </div>
+            <span class="fonts">
+                <a href="./account.html" class="user-login">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+    <main>
+        <h1 tabindex="0">Please sign up!</h1>
+        <div class="box">
+            <ul class="wrapper">
+                <li class="form-row">
+                    <label tabindex="0" for="name">Full name</label>
+                    <input tabindex="0" type="text" id="name" name="name" required="true">
+                </li>
+                <li class="form-row">
+                    <label tabindex="0" for="birthdate">Date of Birth</label>
+                    <input type="text" id="birth" required="true" placeholder="DD/MM/YY" pattern="\d{1,2}/\d{1,2}/\d{4}" >
+                </li>
+                <li class="form-row">
+                    <label tabindex="0" for="country">
+                        Country
+                    </label>
+                    <select class="country" id="card" name="card">
+                        <option value=""></option>
+                        <option tabindex="0" value="select">Select one country</option>
+                    </select>
+                </li>
+                <li class="form-row">
+                    <label tabindex="0" for="city">
+                        City
+                    </label>
+                    <select class="city" id="city" name="city">
+                        <option value=""></option>
+                        <option tabindex="0" value="">Select a city</option>
+                    </select>
+                </li>
+                <li class="form-row">
+                    <label tabindex="0" for="job">
+                        Job title
+                    </label>
+                    <select class="job" id="job" name="job">
+                        <option value=""></option>
+                        <option tabindex="0" value="">Select an occupation</option>
+                    </select>
+                </li>
+
+        </div>
+        <div class="newsletter">
+            <label tabindex="0" for="savecard">I want to receive the newsletter</label>
+            <input type="checkbox" id="savecard" name="savecard" value="card">
+
+        </div>
+        <button onclick='document.location = "./homepage.html"' type="button" tabindex="0">OK</button>
+
+
+    </main>
+    <footer>
+        <div class="footer-icons">
+            <span class="footer-fonts">
+                <a href="#">
+                    <i class="fa-sharp fa-solid fa-angle-left"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-circle"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-square"></i>
+                </a>
+            </span>
+        </div>
+    </footer>
+    
+</body>
+</html>

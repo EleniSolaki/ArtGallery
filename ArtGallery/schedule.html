@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a tour</title>
+    <script src="https://kit.fontawesome.com/41b178347b.js" crossorigin="anonymous"></script>
+    <link href="./css/head-footer.css" rel="stylesheet">
+    <link href="./css/schedule.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <span class="fonts">
+                <a href="#" class="menu-hamb">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </span>
+            <div class="logo">
+                <img src="../art.png" alt="logo">
+            </div>
+            <span class="fonts">
+                <a href="./account.html" class="user-login">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+    <main>
+        <h1 tabindex="0">Schedule a virtual tour</h1>
+        <div class="box up">
+            <ul class="wrapper">
+            <li class="form-row">
+                <label tabindex="0" for="country">
+                    Country
+                </label>
+                <select class="country" id="card" name="card">
+                    <option value=""></option>
+                    <option tabindex="0" value="select">Select one country</option>
+                </select>
+            </li>
+            <li class="form-row">
+                <label tabindex="0" for="city">
+                    City
+                </label>
+                <select class="city" id="city" name="city">
+                    <option value=""></option>
+                    <option tabindex="0" value="">Select a city</option>
+                </select>
+            </li>
+            <li class="form-row">   
+                <label tabindex="0" for="gallery">
+                    Gallery
+                </label>
+                <select class="gallery" id="gallery" name="gallery">
+                    <option value=""></option>
+                    <option tabindex="0" value="">Select a Gallery</option>
+                </select>
+            </li>
+            </ul>
+        </div>
+        <div class="box down">
+            <button onclick='document.location = "./checkout.html"' type="button" tabindex="0">Proceed to purchage</button>
+            <button onclick='document.location = "./homepage.html"' type="button" tabindex="0">Back Home</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-icons">
+            <span class="footer-fonts">
+                <a href="#">
+                    <i class="fa-sharp fa-solid fa-angle-left"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-circle"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-square"></i>
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

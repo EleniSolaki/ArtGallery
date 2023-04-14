@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="./css/head-footer.css" rel="stylesheet">
+    <link href="./css/checkout.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41b178347b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header>
+            <div class="menu">
+                <span class="fonts">
+                    <a href="#" class="menu-hamb">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </span>
+                <div class="logo">
+                    <img src="../art.png" alt="logo">
+                </div>
+                <span class="fonts">
+                    <a href="./account.html" class="user-login">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </a>
+                </span>
+            </div>
+        </header>
+        <main>
+            <h1 tabindex="0">Your choice</h1>
+            <div class="box up">
+                <h2 tabindex="0">René Magritte tour</h2>
+                <img tabindex="0" src="../Rene-Magritte.jpg" alt="René Magritte">
+                <h3>Total cost 25 euros</h3>
+                <button onclick='document.location = "./schedule.html"' type="button" tabindex="0">Edit tour</button>
+            </div>
+            <h1 tabindex="0">Purchage the tour</h1>
+            <div class="box down">
+                <ul class="wrapper">
+                    <li class="form-row">
+                        <label tabindex="0" for="cardnum">Card Number</label>
+                        <input tabindex="0" type="text" id="cardnum" name="cardnumber" required="true">
+                    </li>
+                    <li class="form-row">
+                        <label tabindex="0" for="expiration">Expiration</label>
+                        <input type="text" id="expiration" required="true" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
+                    </li>
+                    <li class="form-row">
+                        <label tabindex="0" for="cvv">CVV</label>
+                        <input tabindex="0" type="text" id="cvv" name="cvv" required="true">
+                    </li>
+                    <li class="form-row">
+                        <label tabindex="0" for="name">Holder Name</label>
+                        <input tabindex="0" type="text" id="name" name="name" required="true">
+                    </li>
+                    <li class="form-row card">
+                        <label tabindex="0" for="savecard">Save card</label>
+                        <input type="checkbox" id="savecard" name="savecard" value="card">
+                        <button onclick='document.location = "./verify.html"' type="button" tabindex="0">OK</button>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer-icons">
+                <span class="footer-fonts">
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-angle-left"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-circle"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-square"></i>
+                    </a>
+                </span>
+            </div>
+        
+        </footer>
+    
+</body>
+</html>
